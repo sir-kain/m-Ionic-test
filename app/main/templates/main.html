@@ -1,0 +1,27 @@
+<ion-view view-title="main module">
+  <!-- do you want padding? -->
+  <ion-content class="padding">
+
+    <!-- content goes here -->
+    <ion-list>
+      <ion-item class="item item-divider" ng-repeat="thing in ctrl.things">
+        {{thing.titre}} || {{thing.description}}
+        <md-button class="md-raised md-primary">Warn</md-button>
+      </ion-item>
+    </ion-list>
+    <div layout="row" layout-xs="column">
+      <div flex>
+        <video height="200" width="auto" id="emeteur"></video>
+        <button id="start">demarrer</button>
+        <textarea style="color: red;" cols="30" rows="2" id="offer" placeholder="lorem"></textarea>
+      </div>
+      <div flex>
+        <video height="200" id="recepteur"></video>
+        <form id="inComing">
+          <textarea style="color: yellow;" cols="18" rows="2" id="data" placeholder="lorem"></textarea>
+          <button type="submit"> Enregistrer l'offre</button>
+        </form>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
