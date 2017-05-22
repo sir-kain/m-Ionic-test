@@ -80,5 +80,8 @@
         "proxyMapTo": "https://echo.getpostman.com"
       }
     ]
+  },
+  "dependencies": {
+    "simple-peer": "^8.1.0"
   }
 }
